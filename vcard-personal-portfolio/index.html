@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box" style="width:120px;height:120px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#23263a;">
+          <img src="./assets/images/my-avatar.jpg" alt="Jay L." style="width:100%;height:100%;object-fit:cover;aspect-ratio:1/1;display:block;border-radius:50%;">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="JayL">Jay Lee</h1>
+
+          <p class="title">Software developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:jays.dev@outlook.com" class="contact-link">jays.dev@outlook.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12366622816" class="contact-link">+1 (236) 662-2816</a>
+            </div>
+
+          </li>
+
+          
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Vancouver, BC, Canada</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://linkedin.com/in/jaysdev" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/jaysdev-coder" class="social-link" target="_blank" rel="noopener" title="GitHub">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="mailto:jays.dev@outlook.com" class="social-link" title="Email">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi, I’m Jay. As a software developer, I'm driven by the endless possibilities technology offers. I love the challenge of turning creative ideas into functional, real-world solutions. Continuous learning is a big part of my journey-I actively explore new tools and practices to stay sharp in this fast-paced industry. I’m passionate about writing clean, maintainable code and following best practices in coding, testing, and deployment.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Backend API icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">API Development</h4>
+
+                <p class="service-item-text">
+                  Designing and building robust RESTful and GraphQL APIs for scalable applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="UI/UX icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI/UX Engineering</h4>
+
+                <p class="service-item-text">
+                  Creating modern, accessible, and responsive interfaces with a focus on user experience.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="Cloud/DevOps icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud & DevOps</h4>
+
+                <p class="service-item-text">
+                  Automating deployments, monitoring, and scaling using Azure, Docker, and CI/CD best practices.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="System Architecture icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">System Architecture</h4>
+
+                <p class="service-item-text">
+                  Designing secure, maintainable, and high-performance software architectures.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - skills (moved up)
+        -->
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card" style="display: flex; flex-wrap: wrap; gap: 18px 32px; justify-content: flex-start; padding: 24px 18px;">
+            <li class="skills-item" style="min-width: 120px;"><div class="title-wrapper" style="justify-content: center;"><h5 class="h5">C#</h5></div></li>
+            <li class="skills-item" style="min-width: 120px;"><div class="title-wrapper" style="justify-content: center;"><h5 class="h5">.NET</h5></div></li>
+            <li class="skills-item" style="min-width: 120px;"><div class="title-wrapper" style="justify-content: center;"><h5 class="h5">JavaScript</h5></div></li>
+            <li class="skills-item" style="min-width: 120px;"><div class="title-wrapper" style="justify-content: center;"><h5 class="h5">TypeScript</h5></div></li>
+            <li class="skills-item" style="min-width: 120px;"><div class="title-wrapper" style="justify-content: center;"><h5 class="h5">React</h5></div></li>
+            <li class="skills-item" style="min-width: 120px;"><div class="title-wrapper" style="justify-content: center;"><h5 class="h5">Redux</h5></div></li>
+            <li class="skills-item" style="min-width: 120px;"><div class="title-wrapper" style="justify-content: center;"><h5 class="h5">Azure</h5></div></li>
+            <li class="skills-item" style="min-width: 120px;"><div class="title-wrapper" style="justify-content: center;"><h5 class="h5">Docker</h5></div></li>
+            <li class="skills-item" style="min-width: 120px;"><div class="title-wrapper" style="justify-content: center;"><h5 class="h5">SQL</h5></div></li>
+            <li class="skills-item" style="min-width: 120px;"><div class="title-wrapper" style="justify-content: center;"><h5 class="h5">HTML/CSS</h5></div></li>
+            <li class="skills-item" style="min-width: 120px;"><div class="title-wrapper" style="justify-content: center;"><h5 class="h5">Node.js</h5></div></li>
+            <li class="skills-item" style="min-width: 120px;"><div class="title-wrapper" style="justify-content: center;"><h5 class="h5">Git</h5></div></li>
+          </ul>
+        </section>
+
+
+        <!--
+          - portfolio (replaces highlights)
+        -->
+        <section class="about-portfolio">
+          <h3 class="h3 portfolio-title">Portfolio</h3>
+          <ul class="about-portfolio-list content-card" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 36px; padding: 32px 0; justify-items: center;">
+            <!-- Moved QMS project to the first position -->
+            <li class="about-portfolio-item" style="width: 100%; max-width: 340px; background: #23263a; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.18); transition: transform 0.2s;">
+              <div style="width:100%;aspect-ratio:16/9;position:relative;overflow:hidden;background:#181a2a;display:flex;align-items:center;justify-content:center;">
+                <img src="./assets/images/qms-project.png" alt="QMS - Qualification Management System" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+              <div style="padding: 20px 18px 18px 18px;">
+                <h4 class="h4" style="margin-bottom: 10px;">QMS - Qualification Management System (CAE)</h4>
+                <p style="font-size: 1em; color: #bfc3d1;">
+                  Redevelopment of the Qualification Management System for airlines, including microservices, data migration, and scalable UI.<br>
+                  <strong>Tech:</strong> .NET, C#, Vue, JavaScript, Gremlin, MsSQL, Node, Docker, Azure
+                </p>
+              </div>
+            </li>
+            <li class="about-portfolio-item stock-tracker-item" style="width: 100%; max-width: 340px; background: #23263a; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.18); transition: transform 0.2s; position: relative;">
+              <div class="stock-img-wrapper" style="position:relative;width:100%;height:160px;">
+                <img src="./assets/images/stocktracker-project.gif" alt="Stock Tracker" style="width: 100%; height: 100%; object-fit: cover; display:block;">
+                <button class="stock-detail-btn" type="button" style="display:none;position:absolute;bottom:12px;right:12px;padding:8px 18px;background:#23263a;color:#fff;border:none;border-radius:8px;font-size:1em;box-shadow:0 2px 8px rgba(0,0,0,0.18);cursor:pointer;z-index:2;">Enlarge</button>
+              </div>
+              <div style="padding: 20px 18px 18px 18px;">
+                <h4 class="h4" style="margin-bottom: 10px;">Stock Tracker</h4>
+                <p style="font-size: 1em; color: #bfc3d1;">
+                  A real-time stock tracking web app with interactive charts and portfolio management.<br>
+                  <strong>Tech:</strong> .NET Core, C#, ASP.NET Core, Blazor, Entity Framework Core, SQL Server, Razor Pages, Bootstrap, CSS
+                </p>
+              </div>
+            </li>
+            <li class="about-portfolio-item" style="width: 100%; max-width: 340px; background: #23263a; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.18); transition: transform 0.2s;">
+              <div style="width:100%;aspect-ratio:16/9;position:relative;overflow:hidden;background:#181a2a;">
+                <iframe src="https://player.vimeo.com/video/714400478?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:0;" title="chickadeeIntroduce.mp4"></iframe>
+              </div>
+              <div style="padding: 20px 18px 18px 18px;">
+                <h4 class="h4" style="margin-bottom: 10px;">Property Management System</h4>
+                <p style="font-size: 1em; color: #bfc3d1;">
+                  Fullstack app for property admins to manage vacancies, rent, and maintenance.<br>
+                  <strong>Tech:</strong> VueJS, Vuex, Node, Express, MySQL, Element
+                </p>
+              </div>
+            </li>
+            <li class="about-portfolio-item chamber-commerce-item" style="width: 100%; max-width: 340px; background: #23263a; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.18); transition: transform 0.2s; position: relative;">
+              <div class="chamber-img-wrapper" style="position:relative;width:100%;height:160px;overflow:hidden;">
+                <img src="./assets/images/chamber-of-commerce-project.gif" alt="Pender Harbour & Egmont Chamber of Commerce Website" style="width: 100%; height: 100%; object-fit:cover; object-position:center; display:block;">
+                <button class="chamber-detail-btn" type="button" style="display:none;position:absolute;bottom:12px;right:12px;padding:8px 18px;background:#23263a;color:#fff;border:none;border-radius:8px;font-size:1em;box-shadow:0 2px 8px rgba(0,0,0,0.18);cursor:pointer;z-index:2;">Enlarge</button>
+              </div>
+              <div style="padding: 20px 18px 18px 18px;">
+                <h4 class="h4" style="margin-bottom: 10px;">Pender Harbour & Egmont Chamber of Commerce Website</h4>
+                <p style="font-size: 1em; color: #bfc3d1;">
+                  A web application for promoting the unique heritage of the Pender Harbour & Egmont area, providing a comprehensive resource for visitors, residents, and businesses.<br>
+                  <strong>Tech:</strong> Vue.js, HTML5, CSS3, JavaScript, Bulma
+                </p>
+              </div>
+            </li>
+            <li class="about-portfolio-item game-comms-item" style="width: 100%; max-width: 340px; background: #23263a; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.18); transition: transform 0.2s; position: relative;">
+              <div class="game-comms-img-wrapper" style="position:relative;width:100%;height:160px;overflow:hidden;">
+                <img src="./assets/images/game-comms-project.png" alt="Game Comms Project" style="width: 100%; height: 100%; object-fit:cover; object-position:center; display:block;">
+                <button class="game-comms-detail-btn" type="button" style="display:none;position:absolute;bottom:12px;right:12px;padding:8px 18px;background:#23263a;color:#fff;border:none;border-radius:8px;font-size:1em;box-shadow:0 2px 8px rgba(0,0,0,0.18);cursor:pointer;z-index:2;">Enlarge</button>
+              </div>
+              <div style="padding: 20px 18px 18px 18px;">
+                <h4 class="h4" style="margin-bottom: 10px;">Game Comms Project</h4>
+                <p style="font-size: 1em; color: #bfc3d1;">
+                  A real-time communication platform for gamers, enabling voice, text, and group chat for seamless in-game collaboration.<br>
+                  <strong>Tech:</strong> React, Node.js, WebRTC, Socket.io, Express, MongoDB
+                </p>
+              </div>
+            </li>
+            <li class="about-portfolio-item" style="width: 100%; max-width: 340px; min-height: 220px; background: #23263a; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.18); transition: transform 0.2s; display: flex; flex-direction: column; position: relative;">
+              <div class="windoor-img-wrapper" style="position:relative;width:100%;height:220px;">
+                <img src="./assets/images/indoor-exercise-project.png" alt="Windoor" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;object-position:center;">
+                <button class="windoor-detail-btn" type="button" style="display:none;position:absolute;bottom:12px;right:12px;padding:8px 18px;background:#23263a;color:#fff;border:none;border-radius:8px;font-size:1em;box-shadow:0 2px 8px rgba(0,0,0,0.18);cursor:pointer;z-index:2;">Enlarge</button>
+              </div>
+              <div style="padding: 20px 18px 18px 18px; flex:1; display:flex; flex-direction:column; justify-content:flex-start;">
+                <h4 class="h4" style="margin-bottom: 10px;">Windoor</h4>
+                <p style="font-size: 1em; color: #bfc3d1;">
+                  Windoor is a web app for mental and physical well-being, offering craft tutorials and at-home workouts.<br>
+                  <strong>Tech:</strong> HTML5, CSS3, JavaScript, Bootstrap, jQuery, Firebase (Firestore & Auth)
+                </p>
+              </div>
+            </li>
+            <!-- Modal for Stock Tracker image -->
+            <div id="stock-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.85);z-index:9999;justify-content:center;align-items:center;">
+              <span id="stock-modal-close" style="position:absolute;top:40px;right:60px;font-size:2.5em;color:#fff;cursor:pointer;z-index:10001;">&times;</span>
+              <img src="./assets/images/stocktracker-project.gif" alt="Stock Tracker Large" style="max-width:90vw;max-height:80vh;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.35);">
+            </div>
+            <!-- Modal for Chamber of Commerce image -->
+            <div id="chamber-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.85);z-index:9999;justify-content:center;align-items:center;">
+              <span id="chamber-modal-close" style="position:absolute;top:40px;right:60px;font-size:2.5em;color:#fff;cursor:pointer;z-index:10001;">&times;</span>
+              <img src="./assets/images/chamber-of-commerce-project.gif" alt="Chamber of Commerce Large" style="max-width:90vw;max-height:80vh;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.35);">
+            </div>
+            <!-- Modal for Game Comms image -->
+            <div id="game-comms-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.85);z-index:9999;justify-content:center;align-items:center;">
+              <span id="game-comms-modal-close" style="position:absolute;top:40px;right:60px;font-size:2.5em;color:#fff;cursor:pointer;z-index:10001;">&times;</span>
+              <img src="./assets/images/game-comms-project.png" alt="Game Comms Large" style="max-width:90vw;max-height:80vh;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.35);">
+            </div>
+            <!-- Modal for Windoor image -->
+            <div id="windoor-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.85);z-index:9999;justify-content:center;align-items:center;">
+              <span id="windoor-modal-close" style="position:absolute;top:40px;right:60px;font-size:2.5em;color:#fff;cursor:pointer;z-index:10001;">&times;</span>
+              <img src="./assets/images/indoor-exercise-project.png" alt="Windoor Large" style="max-width:90vw;max-height:80vh;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.35);">
+            </div>
+            <!-- Modal for QMS image -->
+            <div id="qms-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.85);z-index:9999;justify-content:center;align-items:center;">
+              <span id="qms-modal-close" style="position:absolute;top:40px;right:60px;font-size:2.5em;color:#fff;cursor:pointer;z-index:10001;">&times;</span>
+              <img src="./assets/images/qms-project.png" alt="QMS Large" style="max-width:90vw;max-height:80vh;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.35);">
+            </div>
+          </ul>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Fullstack Developer, CAE</h4>
+              <span>July 2022 - Current</span>
+              <p class="timeline-text">
+                Key contributor to the redevelopment of the Qualification Management System (QMS) for airlines.<br>
+                <div style="padding-left: 24px;">
+                  <div style="display: list-item; list-style: disc; color: #bfc3d1;">Developed RESTful APIs in .NET microservices with Gremlin queries for streamlined data validation and processing.</div>
+                  <div style="display: list-item; list-style: disc; color: #bfc3d1;">Established a staging database (MsSQL) and built foundational APIs and migration tools (JS) for legacy-to-modern data migration.</div>
+                  <div style="display: list-item; list-style: disc; color: #bfc3d1;">Configured APIM and Gateway for secure API calls and policy management.</div>
+                  <div style="display: list-item; list-style: disc; color: #bfc3d1;">Engineered a robust parquet query service in C# with fluent interfaces for efficient qualification data retrieval.</div>
+                  <div style="display: list-item; list-style: disc; color: #bfc3d1;">Created scalable Vue UI components (DRY principle) to enhance qualification and certificate management.</div>
+                  <div style="display: list-item; list-style: disc; color: #bfc3d1;">Implemented comprehensive unit, API, and integration tests, integrated with Azure CI/CD pipelines.</div>
+                </div>
+                <strong>Tech Stack:</strong> .NET, Vue, C#, JavaScript, Gremlin, MsSQL, Node, Docker, Azure
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Activity Connect Web App</h4>
+              <span>Jul 2024 - Jan 2025</span>
+              <p class="timeline-text">
+                Platform for organizing and joining group activities.<br>
+                <div style="padding-left: 24px;">
+                  <div style="display: list-item; list-style: disc; color: #bfc3d1;">Integrated Nginx and Docker for load balancing and high availability.</div>
+                  <div style="display: list-item; list-style: disc; color: #bfc3d1;">Centralized caching via Gateway for improved performance and cost savings.</div>
+                  <div style="display: list-item; list-style: disc; color: #bfc3d1;">Built a logging system with HTTP context for real-time performance and error tracking.</div>
+                  <div style="display: list-item; list-style: disc; color: #bfc3d1;">Developed efficient routing with navigation guards for seamless page transitions.</div>
+                </div>
+                <strong>Tech Stack:</strong> Vue, Bootstrap, SCSS, MsSQL, Node, Vuex, Nginx, Docker
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Smart Route Planner Web App</h4>
+              <span>Jan 2023 - Apr 2023</span>
+              <p class="timeline-text">
+                Travel helper app for optimized driving routes.<br>
+                <div style="padding-left: 24px;">
+                  <div style="display: list-item; list-style: disc; color: #bfc3d1;">Developed backend with .NET and Firebase for authentication and real-time sync.</div>
+                  <div style="display: list-item; list-style: disc; color: #bfc3d1;">Integrated Google APIs (Distance Matrix, Places) for route and location services.</div>
+                  <div style="display: list-item; list-style: disc; color: #bfc3d1;">Implemented breadcrumb navigation for tracking and revisiting places.</div>
+                </div>
+                <strong>Tech Stack:</strong> React Native, React Native Elements, .NET, Redux, Tailwind
+              </p>
+            </li>
+          </ol>
+        </section>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">BCIT, Vancouver, BC</h4>
+              <span>2022</span>
+              <p class="timeline-text">
+                Diploma in Computer Software Technology.<br>
+                <div style="padding-left: 24px;">
+                  <div style="display: list-item; list-style: disc; color: #bfc3d1;">Led collaborative projects and participated in team coding challenges.</div>
+                  <div style="display: list-item; list-style: disc; color: #bfc3d1;">Active in student organizations and tech clubs, organizing workshops and hackathons.</div>
+                </div>
+              </p>
+            </li>
+          </ol>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+// Show enlarge button on hover for Stock Tracker (bottom right of image)
+const stockItem = document.querySelector('.stock-tracker-item');
+if(stockItem) {
+  const imgWrapper = stockItem.querySelector('.stock-img-wrapper');
+  const btn = stockItem.querySelector('.stock-detail-btn');
+  imgWrapper.addEventListener('mouseenter',()=>{ btn.style.display='block'; });
+  imgWrapper.addEventListener('mouseleave',()=>{ btn.style.display='none'; });
+  btn.addEventListener('click',()=>{
+    document.getElementById('stock-modal').style.display = 'flex';
+  });
+}
+const modal = document.getElementById('stock-modal');
+const closeBtn = document.getElementById('stock-modal-close');
+if(modal && closeBtn) {
+  closeBtn.onclick = () => { modal.style.display = 'none'; };
+  modal.onclick = (e) => { if(e.target === modal) modal.style.display = 'none'; };
+}
+// Show enlarge button on hover for Windoor (bottom right of image)
+const windoorItem = document.querySelector('.about-portfolio-item .windoor-img-wrapper');
+if(windoorItem) {
+  const btn = windoorItem.querySelector('.windoor-detail-btn');
+  windoorItem.addEventListener('mouseenter',()=>{ btn.style.display='block'; });
+  windoorItem.addEventListener('mouseleave',()=>{ btn.style.display='none'; });
+  btn.addEventListener('click',()=>{
+    document.getElementById('windoor-modal').style.display = 'flex';
+  });
+}
+const windoorModal = document.getElementById('windoor-modal');
+const windoorCloseBtn = document.getElementById('windoor-modal-close');
+if(windoorModal && windoorCloseBtn) {
+  windoorCloseBtn.onclick = () => { windoorModal.style.display = 'none'; };
+  windoorModal.onclick = (e) => { if(e.target === windoorModal) windoorModal.style.display = 'none'; };
+}
+// Show enlarge button on hover for Chamber of Commerce project
+const chamberItem = document.querySelector('.chamber-commerce-item .chamber-img-wrapper');
+if(chamberItem) {
+  const btn = chamberItem.querySelector('.chamber-detail-btn');
+  chamberItem.addEventListener('mouseenter',()=>{ btn.style.display='block'; });
+  chamberItem.addEventListener('mouseleave',()=>{ btn.style.display='none'; });
+  btn.addEventListener('click',()=>{
+    document.getElementById('chamber-modal').style.display = 'flex';
+  });
+}
+const chamberModal = document.getElementById('chamber-modal');
+const chamberCloseBtn = document.getElementById('chamber-modal-close');
+if(chamberModal && chamberCloseBtn) {
+  chamberCloseBtn.onclick = () => { chamberModal.style.display = 'none'; };
+  chamberModal.onclick = (e) => { if(e.target === chamberModal) chamberModal.style.display = 'none'; };
+}
+// Show enlarge button on hover for Game Comms project
+const gameCommsItem = document.querySelector('.game-comms-item .game-comms-img-wrapper');
+if(gameCommsItem) {
+  const btn = gameCommsItem.querySelector('.game-comms-detail-btn');
+  gameCommsItem.addEventListener('mouseenter',()=>{ btn.style.display='block'; });
+  gameCommsItem.addEventListener('mouseleave',()=>{ btn.style.display='none'; });
+  btn.addEventListener('click',()=>{
+    document.getElementById('game-comms-modal').style.display = 'flex';
+  });
+}
+const gameCommsModal = document.getElementById('game-comms-modal');
+const gameCommsCloseBtn = document.getElementById('game-comms-modal-close');
+if(gameCommsModal && gameCommsCloseBtn) {
+  gameCommsCloseBtn.onclick = () => { gameCommsModal.style.display = 'none'; };
+  gameCommsModal.onclick = (e) => { if(e.target === gameCommsModal) gameCommsModal.style.display = 'none'; };
+}
+// Show enlarge button on hover for QMS project
+const qmsItem = document.querySelector('.about-portfolio-item:last-child img');
+if(qmsItem) {
+  const qmsBtn = document.getElementById('qms-modal-close');
+  qmsItem.parentElement.addEventListener('mouseenter',()=>{ qmsBtn.style.display='block'; });
+  qmsItem.parentElement.addEventListener('mouseleave',()=>{ qmsBtn.style.display='none'; });
+  qmsBtn.addEventListener('click',()=>{
+    document.getElementById('qms-modal').style.display = 'flex';
+  });
+}
+const qmsModal = document.getElementById('qms-modal');
+if(qmsModal) {
+  qmsModal.onclick = (e) => { if(e.target === qmsModal) qmsModal.style.display = 'none'; };
+}
+</script>
+
+</body>
+
+</html>
